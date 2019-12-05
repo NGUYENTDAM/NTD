@@ -2,6 +2,7 @@
 using DevExpress.XtraEditors;
 using NTD.BUS;
 using NTD.GUI;
+using NTD.GUI.frmChucNang;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
