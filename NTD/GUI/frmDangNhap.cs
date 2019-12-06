@@ -19,7 +19,7 @@ namespace NTD.GUI
         public frmDangNhap()
         {
             InitializeComponent();
-            textEdit1.Focus();
+            txtTaiKhoan.Focus();
         }
 
         public static string _username;
@@ -27,8 +27,8 @@ namespace NTD.GUI
         RoleForm_BUS roleFormBUS = new RoleForm_BUS();
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            string username = textEdit1.Text;
-            string password = textEdit2.Text;
+            string username = txtTaiKhoan.Text;
+            string password = txtMK.Text;
             
             var rs = userBUS.Login(username, password);
             if (rs != null)
@@ -43,8 +43,8 @@ namespace NTD.GUI
                 var roleId = rs.RoleId;
                 _username = rs.userName;
                 Form1 form1 = new Form1(roleId);
-                textEdit1.ResetText();
-                textEdit2.ResetText();
+                txtTaiKhoan.ResetText();
+                txtMK.ResetText();
                 username = string.Empty;
                 password = string.Empty;
                 this.Hide();
@@ -63,6 +63,10 @@ namespace NTD.GUI
             Application.Exit();
         }
 
-
+        private void frmDangNhap_Load(object sender, EventArgs e)
+        {
+            txtTaiKhoan.Text = "admin";
+            txtMK.Text = "123";
+        }
     }
 }

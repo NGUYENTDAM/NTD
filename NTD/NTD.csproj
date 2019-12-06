@@ -114,6 +114,7 @@
     <Compile Include="BUS\PhanQuyen_BUS.cs" />
     <Compile Include="BUS\RoleForm_BUS.cs" />
     <Compile Include="BUS\ThemNguoiDung_BUS.cs" />
+    <Compile Include="BUS\TonKho_BUS.cs" />
     <Compile Include="BUS\User_BUS.cs" />
     <Compile Include="DAO\DAO_DonVi.cs" />
     <Compile Include="DAO\DAO_HangHoa.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="DAO\DAO_NhanVien.cs" />
     <Compile Include="DAO\DAO_PhanQuyen.cs" />
     <Compile Include="DAO\DAO_ThemNguoiDung.cs" />
+    <Compile Include="DAO\DAO_TonKho.cs" />
     <Compile Include="DAO\db.cs" />
     <Compile Include="DAO\DAO_NhomHang.cs" />
     <Compile Include="DAO\RoleFormDAO.cs" />

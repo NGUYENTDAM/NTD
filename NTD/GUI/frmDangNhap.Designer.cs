@@ -31,13 +31,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtTaiKhoan = new DevExpress.XtraEditors.TextEdit();
+            this.txtMK = new DevExpress.XtraEditors.TextEdit();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnKetThuc = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTaiKhoan.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMK.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -70,20 +70,20 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Mật Khẩu :";
             // 
-            // textEdit1
+            // txtTaiKhoan
             // 
-            this.textEdit1.Location = new System.Drawing.Point(110, 80);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(216, 20);
-            this.textEdit1.TabIndex = 3;
+            this.txtTaiKhoan.Location = new System.Drawing.Point(110, 80);
+            this.txtTaiKhoan.Name = "txtTaiKhoan";
+            this.txtTaiKhoan.Size = new System.Drawing.Size(216, 20);
+            this.txtTaiKhoan.TabIndex = 3;
             // 
-            // textEdit2
+            // txtMK
             // 
-            this.textEdit2.Location = new System.Drawing.Point(110, 118);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.PasswordChar = '*';
-            this.textEdit2.Size = new System.Drawing.Size(216, 20);
-            this.textEdit2.TabIndex = 4;
+            this.txtMK.Location = new System.Drawing.Point(110, 118);
+            this.txtMK.Name = "txtMK";
+            this.txtMK.Properties.PasswordChar = '*';
+            this.txtMK.Size = new System.Drawing.Size(216, 20);
+            this.txtMK.TabIndex = 4;
             // 
             // checkBox1
             // 
@@ -123,8 +123,8 @@
             this.Controls.Add(this.btnKetThuc);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textEdit2);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.txtMK);
+            this.Controls.Add(this.txtTaiKhoan);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -133,8 +133,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập - NTĐ";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            this.Load += new System.EventHandler(this.frmDangNhap_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.txtTaiKhoan.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMK.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,8 +146,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtTaiKhoan;
+        private DevExpress.XtraEditors.TextEdit txtMK;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnKetThuc;
